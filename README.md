@@ -13,4 +13,4 @@ Our paper has been recieved by MM2022(oral)! You may get more detail in the pape
 Before you try this code, please download CUB dataset and change the datadir in yaml.
 
 ## Start
-python ./tools_cam/test_ppd.py --config ./configs/CUB/plvit_baseline.yaml
+python ./tools_cam/test_ppd.py --config ./configs/CUB/ppd_baseline.yaml
