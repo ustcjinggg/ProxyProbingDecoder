@@ -2,7 +2,7 @@
 Repository for paper "Proxy Probing Decoder for Weakly Supervised Object Localization: A Baseline Investigation".
 
 ## Introduction
-Our paper has been recieved by MM2022(oral)! You may get more detail in the paper.
+Our paper has been recieved by MM2022! You may get more detail in the paper.
 
 ## Requirement:
 * torch >= 1.7.1
