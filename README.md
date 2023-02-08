@@ -10,13 +10,13 @@ Our paper has been recieved by MM2022! You may get more detail in the paper. Thi
 * timm >= 0.3.2
 
 ## Data
-Before you try this code, please download CUB dataset and change the datadir in yaml.
-Your datadir should look like this:
-CUB_200_2011
-  --images
-  --DinoFeat2
-  --DinoCAM2
-  --list
+Before you try this code, please download CUB dataset and change the datadir in yaml. 
+Your datadir should look like this: 
+CUB_200_2011 
+  --images 
+  --DinoFeat2 
+  --DinoCAM2 
+  --list 
 We use fixed Dino-S model to provide features and pseudo labels in DinoFeat2 and DinoCAM2. You can download from:
 
 
