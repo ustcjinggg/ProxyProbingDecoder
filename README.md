@@ -14,13 +14,13 @@ Before you try this code, please download CUB dataset and change the datadir in 
 
 Your datadir in CUB_200_2011 should include images, list, DinoFeat2 and DinoCAM2.
 
-We use fixed Dino-S model to provide features and pseudo labels in DinoFeat2 and DinoCAM2. You can download from: [Baiduyun,](https://pan.baidu.com/s/1rdGBe1YiK2MzO6zgd6InBg?pwd=u87i)
+We use fixed Dino-S model to provide features and pseudo labels in DinoFeat2 and DinoCAM2. You can download from: [Baiduyun](https://pan.baidu.com/s/1rdGBe1YiK2MzO6zgd6InBg?pwd=u87i)
 
 
 
 ## Models
 You can download the models here for evaluation:
-https://drive.google.com/drive/folders/1UdSlfO0Iv-b0OYE8aF51zoO-jLgm1wbb?usp=sharing
+[GoogleDrive](https://drive.google.com/drive/folders/1UdSlfO0Iv-b0OYE8aF51zoO-jLgm1wbb?usp=sharing)
 
 ## Start
 python ./tools_cam/test_ppd.py --config ./configs/CUB/ppd_baseline.yaml
