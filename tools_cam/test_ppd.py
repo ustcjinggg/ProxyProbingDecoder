@@ -42,8 +42,8 @@ os.environ["CUDA_VISIBLE_DEVICES"]="0"
 def main():
     args = update_config()
     # create checkpoint directory
-    cfg.BASIC.SAVE_DIR = os.path.join('./result/', cfg.DATA.DATASET, 'TIME{}_THR{}_BS{}_MASK{}_TYPE{}_GAMMA_{}'.format(
-        cfg.BASIC.TIME, cfg.MODEL.CAM_THR, cfg.TEST.BATCH_SIZE, cfg.DATA.MASK_SIZE, cfg.BASIC.TMP_TYPE, cfg.BASIC.GAMMA))
+    cfg.BASIC.SAVE_DIR = os.path.join('./result/', cfg.DATA.DATASET, 'TIME{}_THR{}_BS{}_MASK{}_GAMMA_{}'.format(
+        cfg.BASIC.TIME, cfg.MODEL.CAM_THR, cfg.TEST.BATCH_SIZE, cfg.DATA.MASK_SIZE, cfg.BASIC.GAMMA))
     cfg.BASIC.ROOT_DIR = './'
     log_dir = os.path.join(cfg.BASIC.SAVE_DIR, 'log'); mkdir(log_dir)
     ckpt_dir = os.path.join(cfg.BASIC.SAVE_DIR, 'ckpt'); mkdir(ckpt_dir)
@@ -178,6 +178,7 @@ def val_loc_one_epoch(val_loader, train_loader, model, linear_classifier,decov_r
             topk_idx = topk_idx.tolist()
             
             #get loc
+            #pdb.set_trace()
             patch_embed = model.get_intermediate_layers(input,1)[0]
             hw = int((patch_embed.shape[1]-1)**0.5)
             patch_embed = patch_embed[:,1:,:].permute([0, 2, 1]).contiguous()
