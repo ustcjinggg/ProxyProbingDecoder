@@ -25,17 +25,17 @@ config = __C
 __C.BASIC = AttrDict()
 __C.BASIC.TIME = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M')
 __C.BASIC.GPU_ID = [0]
-__C.BASIC.NUM_WORKERS = 40
+__C.BASIC.NUM_WORKERS = 6
 __C.BASIC.DISP_FREQ = 5  # frequency to display
 __C.BASIC.SEED = 0
-__C.BASIC.SAVE_DIR = ''
+__C.BASIC.OUTPUT_DIR = ''
 __C.BASIC.ROOT_DIR = ''
 __C.BASIC.BACKUP_CODES = True
 __C.BASIC.BACKUP_LIST = ['lib', 'tools', 'tools_cls']
 __C.BASIC.PATCH_SIZE = 16
 __C.BASIC.N_LAST = 4
 __C.BASIC.AVGPOOL = False
-__C.BASIC.TMP_TYPE = 'knn'
+__C.BASIC.AUTO_RESUME = True
 __C.BASIC.Q_TYPE = 'masaic'
 __C.BASIC.GAMMA = 0.7
 __C.BASIC.SAVE_CAM = False
@@ -83,17 +83,17 @@ __C.SOLVER.MUMENTUM = 0.9
 
 # Training options.
 __C.TRAIN = AttrDict()
-__C.TRAIN.BATCH_SIZE = 16
-__C.TRAIN.ALPHA = 1.0
-__C.TRAIN.BETA = 1.0
+__C.TRAIN.BATCH_SIZE = 256
+__C.TRAIN.OPTIMIZER = 'adam'
+__C.TRAIN.LR = 0.001
 
 # Testing options.
 __C.TEST = AttrDict()
-__C.TEST.BATCH_SIZE = 16
+__C.TEST.BATCH_SIZE = 128
 __C.TEST.CKPT_DIR = ''
 __C.TEST.TEN_CROPS = False
 __C.TEST.SAVE_CAMS = False
-__C.TEST.SAVE_BOXED_IMAGE = False
+__C.TEST.SAVE_BOXED_IMAGE = True
 
 
 def merge_dicts(dict_a, dict_b):
