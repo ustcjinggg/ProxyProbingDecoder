@@ -14,7 +14,7 @@ Before you try this code, please download CUB dataset and change the datadir in 
 
 Your datadir in CUB_200_2011 should include images, list, DinoFeat2 and DinoCAM2.
 
-We use fixed Dino-S model to provide features and pseudo labels in DinoFeat2 and DinoCAM2. You can download from: [Baiduyun](https://pan.baidu.com/s/1rdGBe1YiK2MzO6zgd6InBg?pwd=u87i)
+We use fixed Dino-S model to provide features and pseudo labels in DinoFeat2 and DinoCAM2. You can download from: [Baiduyun](https://pan.baidu.com/s/1rdGBe1YiK2MzO6zgd6InBg?pwd=u87i) and [GoogleDrive](https://drive.google.com/drive/folders/1ev1U6f1l4oG3smpYkP_W6BlKGCo64ChF?usp=sharing)
 
 
 
